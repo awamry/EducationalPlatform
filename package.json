@@ -1,0 +1,31 @@
+{
+  "name": "educationalplatform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "gulp test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awamry/EducationalPlatform.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/awamry/EducationalPlatform/issues"
+  },
+  "homepage": "https://github.com/awamry/EducationalPlatform#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "express": "^4.16.4",
+    "mocha": "^6.1.4",
+    "request": "^2.88.0",
+    "gulp": "^3.9.1",
+    "gulp-bg": "0.0.8",
+    "gulp-mocha": "^2.2.0"
+  }
+}
