@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "directories": {
-    "test": "gulp test"
+    "test": "test"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",

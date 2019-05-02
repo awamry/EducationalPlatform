@@ -1,6 +1,5 @@
 const request = require('request');
 const expect = require('chai').expect;
-const app = require('../index')
 
 
 describe('Server response', function () {
