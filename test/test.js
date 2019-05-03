@@ -1,5 +1,6 @@
 const request = require('request');
 const expect = require('chai').expect;
+const app = require('../lib/index');
 
 
 describe('Server response', function () {
