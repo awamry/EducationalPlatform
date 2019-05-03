@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "directories": {
-    "test": "gulp test"
+    "test": "test"
   },
   "scripts": {
     "test": "mocha ./test/test.js --timeout 10000 --exit",
@@ -41,6 +41,7 @@
     "blanket": "^1.2.3",
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
+    "expect": "^24.7.1",
     "express": "^4.16.4",
     "gulp": "^3.9.1",
     "gulp-bg": "0.0.8",

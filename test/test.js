@@ -1,16 +1,15 @@
-const chai = require('chai')
-const chaiHttp = require('chai-http')
+const request = require('request')
 const expect = require('chai').expect
+// eslint-disable-next-line no-unused-vars
 const app = require('../lib/index')
-
-chai.use(chaiHttp)
-var url = 'http://localhost:3000'
-var requester = chai.request.agent(url)
+// eslint-disable-next-line no-undef
 describe('Server response', function () {
+  // eslint-disable-next-line no-undef
   it('should return 200', function (done) {
-    requester.get('/').end(function (err, res) {
-      expect(res).to.have.status(200)
-      done() // <= Call done to signal callback end
+    request.get('http://localhost:3000/', function (err, res, body) {
+      if (err) throw err
+      expect(res.statusCode).to.equal(200)
+      done()
     })
   })
 })
