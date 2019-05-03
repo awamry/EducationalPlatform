@@ -6,3 +6,5 @@ before_install:
 script:
   - npm run lint
   - npm run coveralls
+notifications:
+  email: false
