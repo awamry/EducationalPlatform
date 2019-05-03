@@ -1,4 +1,4 @@
-const db = require('./database/config/database')
+const db = require('./database/config/database');
 const Games = require('./database/models/Games')
 const Questions = require('./database/models/questions')
 const connectSequelize = async () => {
