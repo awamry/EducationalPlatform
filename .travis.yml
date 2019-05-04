@@ -7,7 +7,6 @@ services:
   - postgresql
 before_script:
   - psql -c 'create database games;' -U postgres
-  - npm install coveralls
 script:
   - npm run lint
   - npm run coveralls
