@@ -4,6 +4,6 @@ COPY package.json /app
 RUN npm install
 COPY . /app
 CMD node lib/index.js
-EXPOSE 80
+EXPOSE 3000
 
 
