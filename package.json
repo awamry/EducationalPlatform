@@ -11,7 +11,8 @@
     "coverage": "nyc --reporter=lcov --reporter=text-lcov npm test",
     "coveralls": "npm run coverage  && cat ./coverage/lcov.info | coveralls",
     "lint": "eslint \"**/*.js\"",
-    "lint:fix": "prettier-eslint \"**/*.js\" --write"
+    "lint:fix": "prettier-eslint \"**/*.js\" --write",
+    "start": "node lib/index.js"
   },
   "nyc": {
     "_comment": "Purpose of this part: to do code coverage within Mocha/Chai using Istanbul",
