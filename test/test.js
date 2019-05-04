@@ -1,10 +1,15 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 const request = require('request')
 const expect = require('chai').expect
-// eslint-disable-next-line no-unused-vars
 const app = require('../lib/index')
-// eslint-disable-next-line no-undef
+const db = require('../lib/database')
+
+before(async () => {
+  await db.authenticate()
+})
+
 describe('Server response', function () {
-  // eslint-disable-next-line no-undef
   it('should return 200', function (done) {
     request.get('http://localhost:3000/', function (err, res, body) {
       if (err) throw err
