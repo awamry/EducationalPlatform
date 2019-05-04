@@ -11,7 +11,7 @@ before(async () => {
 
 describe('Server response', function () {
   it('should return 200', function (done) {
-    request.get('http://localhost:3000/', function (err, res, body) {
+    request.get('http://localhost:3000', function (err, res, body) {
       if (err) throw err
       expect(res.statusCode).to.equal(200)
       done()
