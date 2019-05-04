@@ -1,10 +1,20 @@
+sudo: true
+addons:
+  postgresql: '10'
+  apt:
+    packages:
+      - postgresql-10-postgis-2.4
+      - postgresql-10-postgis-2.4-scripts
+      - postgresql-client-10
+env:
+  global:
+    - PGPORT=5432
 language: node_js
 node_js:
   - "10"
 before_install:
   - npm i -g nyc
-before_script:
-  - psql -c "CREATE DATABASE games;" -U postgres
+  - sudo -u postgres psql -c "CREATE DATABASE GAMES"
 script:
   - npm run lint
   - npm run coveralls
